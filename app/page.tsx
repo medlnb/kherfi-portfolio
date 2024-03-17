@@ -81,16 +81,16 @@ const Home = () => {
       <section className="my-10 text-center">
         <h1 className="text-4xl pb-4">Education</h1>
         <div className="grid lg:grid-cols-2 gap-4">
-          {educations.map((education) => (
-            <Card {...education} />
+          {educations.map((education, index) => (
+            <Card key={index} {...education} />
           ))}
         </div>
       </section>
       <section className="my-10 text-center">
         <h1 className="text-4xl pb-4">Work experience</h1>
         <div className="grid lg:grid-cols-2 gap-4">
-          {experiences.map((experience) => (
-            <Card {...experience} />
+          {experiences.map((experience, index) => (
+            <Card key={index} {...experience} />
           ))}
         </div>
       </section>
