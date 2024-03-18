@@ -72,7 +72,7 @@ const Home = () => {
         </div>
         <img
           src={"/Kherfi.png"}
-          className="h-full bg-black rounded-xl border border-4 block sm:hidden"
+          className="h-full bg-black rounded-xl border border-4 hidden sm:block"
           style={{ boxShadow: "0px 0px 10px white" }}
           alt="Mohammed Lamine Kherfi picture"
         />
@@ -124,7 +124,7 @@ const Card = ({
 }) => {
   return (
     <div className="border p-2 rounded-md">
-      <div className="flex justify-between mb-2 px-2">
+      <div className="flex justify-between mb-2 lg:px-2">
         <p>{location}</p>
         <p>{date}</p>
       </div>

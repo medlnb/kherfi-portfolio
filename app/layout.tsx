@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">
+      <body className="bg-black text-white text-xs lg:text-base">
         <Nav />
-        <main className="p-8">{children}</main>
+        <main className="lg:p-8 p-2">{children}</main>
       </body>
     </html>
   );
