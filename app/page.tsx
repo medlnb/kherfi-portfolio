@@ -65,25 +65,47 @@ const Home = () => {
   return (
     <div className="h-dvh overflow-y-scroll snap-y snap-mandatory hidescrollbar">
       <Section>
-        <div className="h-full w-full flex md:flex-row flex-col  items-center justify-around">
-          <img
-            src={"/Kherfi.png"}
-            className="w-52 mb-4 bg-black rounded-xl border border-4 block sm:hidden"
-            style={{ boxShadow: "0px 0px 10px white" }}
-            alt="Mohammed Lamine Kherfi picture"
-          />
-          <div>
-            <h1 className="text-3xl pb-4">Mohammed Lamine Kherfi, PhD</h1>
-            <p>Former Director of Digitization, Ministry of higher education</p>
-            <p>Expert in Artificial intelligence</p>
-            <p>Professor : Univ of Québec / Univ Ouargla / ENSIA</p>
+        <div className="flex justify-around items-center">
+          <div className="lg:block hidden">
+            <h1 className="text-3xl pb-10">Mohammed Lamine Kherfi, PhD</h1>
+
+            <div className="h-52 text-lg flex justify-between flex-col ">
+              <div className="flex items-end gap-2">
+                <div className="w-6 h-0.5 bg-white"></div>
+                <p>About me</p>
+              </div>
+              <div className="flex items-end gap-2">
+                <div className="w-12 h-0.5 bg-white"></div>
+                <p>Education</p>
+              </div>
+              <div className="flex items-end gap-2">
+                <div className="w-20 h-0.5 bg-white"></div>
+                <p>Work experience</p>
+              </div>
+              <div className="flex items-end gap-2">
+                <div className="w-28 h-0.5 bg-white"></div>
+                <p>Awards and honors</p>
+              </div>
+            </div>
           </div>
-          <img
-            src={"/Kherfi.png"}
-            className="h-96 bg-black rounded-xl border border-4 hidden sm:block"
-            style={{ boxShadow: "0px 0px 10px white" }}
-            alt="Mohammed Lamine Kherfi picture"
-          />
+          <div className="flex flex-col items-center gap-4">
+            <h1 className="text-2xl pb-10 lg:hidden">
+              Dr. Mohammed Lamine Kherfi
+            </h1>
+            <img
+              src={"/Kherfi.png"}
+              className="w-52 mb-4 bg-black rounded-xl border border-4"
+              style={{ boxShadow: "0px 0px 10px white" }}
+              alt="Mohammed Lamine Kherfi picture"
+            />
+            <div>
+              <p>
+                Former Director of Digitization, Ministry of higher education
+              </p>
+              <p>Expert in Artificial intelligence</p>
+              <p>Professor : Univ of Québec / Univ Ouargla / ENSIA</p>
+            </div>
+          </div>
         </div>
       </Section>
       <Section>
