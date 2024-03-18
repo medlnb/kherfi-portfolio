@@ -63,7 +63,13 @@ const Home = () => {
   ];
   return (
     <div>
-      <section className="flex md:flex-row flex-col  items-center justify-around h-96 my-20">
+      <section className="flex md:flex-row flex-col  items-center justify-around lg:h-96 lg:my-20 my-4">
+        <img
+          src={"/Kherfi.png"}
+          className="w-52 mb-4 bg-black rounded-xl border border-4 block sm:hidden"
+          style={{ boxShadow: "0px 0px 10px white" }}
+          alt="Mohammed Lamine Kherfi picture"
+        />
         <div>
           <h1 className="text-3xl pb-4">Mohammed Lamine Kherfi, PhD</h1>
           <p>Former Director of Digitization, Ministry of higher education</p>
