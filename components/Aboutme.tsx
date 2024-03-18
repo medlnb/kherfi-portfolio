@@ -1,10 +1,10 @@
 function Aboutme() {
   return (
-    <section className="text-center">
+    <div className="text-center">
       <h1 className="text-4xl pb-4">About me</h1>
       <div className="grid lg:grid-cols-2 gap-4">
         <article className="border border-gray-500  p-2 rounded-lg">
-          <h2 className="text-2xl text-center">As a Director</h2>
+          <h2 className="text-2xl">As a Director</h2>
           <p className="p-4 text-gray-400">
             As a National Director of Digitization within the Ministry of higher
             education and scientific research, Algeria, I was the main
@@ -20,7 +20,7 @@ function Aboutme() {
           </p>
         </article>
         <article className="border border-gray-500  p-2 rounded-lg">
-          <h2 className="text-2xl text-center">As a Scientist</h2>
+          <h2 className="text-2xl">As a Scientist</h2>
           <p className="p-4 text-gray-400">
             During over 18 years of experience as a Professor in two different
             universities and countries: University of Quebec at Trois-Rivières,
@@ -34,7 +34,7 @@ function Aboutme() {
           </p>
         </article>
       </div>
-    </section>
+    </div>
   );
 }
 

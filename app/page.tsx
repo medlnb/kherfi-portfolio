@@ -61,46 +61,52 @@ const Home = () => {
       location: "Touggourt, Algeria",
     },
   ];
+
   return (
-    <div>
-      <section className="flex md:flex-row flex-col  items-center justify-around lg:h-96 lg:my-20 my-4">
-        <img
-          src={"/Kherfi.png"}
-          className="w-52 mb-4 bg-black rounded-xl border border-4 block sm:hidden"
-          style={{ boxShadow: "0px 0px 10px white" }}
-          alt="Mohammed Lamine Kherfi picture"
-        />
-        <div>
-          <h1 className="text-3xl pb-4">Mohammed Lamine Kherfi, PhD</h1>
-          <p>Former Director of Digitization, Ministry of higher education</p>
-          <p>Expert in Artificial intelligence</p>
-          <p>Professor : Univ of Québec / Univ Ouargla / ENSIA</p>
+    <div className="h-dvh overflow-y-scroll snap-y snap-mandatory hidescrollbar">
+      <Section>
+        <div className="h-full w-full flex md:flex-row flex-col  items-center justify-around">
+          <img
+            src={"/Kherfi.png"}
+            className="w-52 mb-4 bg-black rounded-xl border border-4 block sm:hidden"
+            style={{ boxShadow: "0px 0px 10px white" }}
+            alt="Mohammed Lamine Kherfi picture"
+          />
+          <div>
+            <h1 className="text-3xl pb-4">Mohammed Lamine Kherfi, PhD</h1>
+            <p>Former Director of Digitization, Ministry of higher education</p>
+            <p>Expert in Artificial intelligence</p>
+            <p>Professor : Univ of Québec / Univ Ouargla / ENSIA</p>
+          </div>
+          <img
+            src={"/Kherfi.png"}
+            className="h-96 bg-black rounded-xl border border-4 hidden sm:block"
+            style={{ boxShadow: "0px 0px 10px white" }}
+            alt="Mohammed Lamine Kherfi picture"
+          />
         </div>
-        <img
-          src={"/Kherfi.png"}
-          className="h-full bg-black rounded-xl border border-4 hidden sm:block"
-          style={{ boxShadow: "0px 0px 10px white" }}
-          alt="Mohammed Lamine Kherfi picture"
-        />
-      </section>
-      <Aboutme />
-      <section className="my-10 text-center">
-        <h1 className="text-4xl pb-4">Education</h1>
+      </Section>
+      <Section>
+        <Aboutme />
+      </Section>
+
+      <Section>
+        <h1 className="text-4xl pb-4 text-center">Education</h1>
         <div className="grid lg:grid-cols-2 gap-4">
           {educations.map((education, index) => (
             <Card key={index} {...education} />
           ))}
         </div>
-      </section>
-      <section className="my-10 text-center">
-        <h1 className="text-4xl pb-4">Work experience</h1>
+      </Section>
+      <Section>
+        <h1 className="text-4xl pb-4 text-center">Work experience</h1>
         <div className="grid lg:grid-cols-2 gap-4">
           {experiences.map((experience, index) => (
             <Card key={index} {...experience} />
           ))}
         </div>
-      </section>
-      <section className="my-10">
+      </Section>
+      <Section>
         <h1 className="text-4xl pb-4  text-center">Awards and honors</h1>
         <div className="border p-2 rounded-md">
           <div className="px-3 text-gray-300 text-">
@@ -112,12 +118,20 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </Section>
     </div>
   );
 };
 
 export default Home;
+
+const Section = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <section className="h-full w-full lg:p-20 p-2 flex items-center justify-center snap-start">
+      <div className="w-full">{children}</div>
+    </section>
+  );
+};
 
 const Card = ({
   content,

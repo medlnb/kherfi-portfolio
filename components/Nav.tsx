@@ -10,7 +10,7 @@ function Nav() {
   ];
 
   return (
-    <header className="border-b border-gray-700 flex justify-between px-2 ">
+    <header className="border-b border-gray-700 flex justify-between px-2 fixed w-full bg-black">
       <p className="p-3">Mohammed Lamine Kherfi, PhD</p>
       <nav className="lg:flex hidden">
         {navs.map((nav) => (
