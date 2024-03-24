@@ -40,24 +40,19 @@ function Nav() {
               {nav}
             </p>
           ))}
-          <p className="py-3 px-10 hover:bg-gray-800 cursor-pointer">contact</p>
         </nav>
         <div ref={menuRef} className="lg:hidden cursor-pointer">
           <IoMdMenu size={20} onClick={() => setToggleNav(!toggleNav)} />
         </div>
       </section>
       {toggleNav && (
-        <>
-          <nav className="grid grid-cols-2 text-center">
-            {navs.map((nav) => (
-              <p key={nav} className="p-3 hover:bg-gray-800 cursor-pointer">
-                {nav}
-              </p>
-            ))}
-          </nav>
-
-          <p className="py-3 px-10 text-center">contact</p>
-        </>
+        <nav className="grid grid-cols-2 text-center">
+          {navs.map((nav) => (
+            <p key={nav} className="p-3 hover:bg-gray-800 cursor-pointer">
+              {nav}
+            </p>
+          ))}
+        </nav>
       )}
     </header>
   );
