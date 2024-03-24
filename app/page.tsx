@@ -66,7 +66,7 @@ const Home = () => {
     <div className="h-dvh overflow-y-scroll snap-y snap-mandatory hidescrollbar">
       <Section>
         <div className="flex lg:flex-row lg:justify-around lg:h-80 flex-col  justify-center gap-20  h-dvh">
-          <div className="flex flex-col justify-around items-center">
+          <div className="flex flex-col justify-around items-center lg:items-start">
             <img
               src={"/Kherfi.png"}
               className="w-24 h-24 object-cover mb-4 bg-black rounded-full "
@@ -76,7 +76,7 @@ const Home = () => {
               {"Hello! I'm Dr. Mohammed Lamine Kherfi."}
             </h1>
           </div>
-          <div className="flex flex-col justify-around items-center border">
+          <div className="flex flex-col justify-around items-center lg:items-start">
             <div>
               <h1 className="lg:text-4xl text-2xl mb-4">
                 Computer Science and Ai phd
