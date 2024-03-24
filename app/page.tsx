@@ -73,7 +73,7 @@ const Home = () => {
               alt="Mohammed Lamine Kherfi picture"
             />
             <h1 className="lg:text-4xl text-2xl font-medium">
-              Hello! I'm Dr. Mohammed Lamine Kherfi.
+              {"Hello! I'm Dr. Mohammed Lamine Kherfi."}
             </h1>
           </div>
           <div className="flex flex-col justify-around items-center border">
