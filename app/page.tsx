@@ -1,5 +1,8 @@
+"use client";
+import { MutableRefObject, useRef } from "react";
 import Aboutme from "@components/Aboutme";
 import { FaStar } from "react-icons/fa";
+import { FaAnglesDown } from "react-icons/fa6";
 
 const Home = () => {
   const rewards = [
@@ -61,7 +64,7 @@ const Home = () => {
       location: "Touggourt, Algeria",
     },
   ];
-
+  const scrollRef: React.LegacyRef<HTMLDivElement> | null = useRef(null);
   return (
     <div className="h-dvh overflow-y-scroll snap-y snap-mandatory hidescrollbar">
       <Section>
@@ -87,19 +90,29 @@ const Home = () => {
               <p>Expert in Artificial intelligence</p>
               <p>Professor : Univ of Québec / Univ Ouargla / ENSIA</p>
             </div>
-            <div className="mt-6">
-              <button className="text-black py-0.5 px-2 rounded-md bg-white">
+            <div className="mt-6 flex ">
+              <button className="text-black py-1 px-6 rounded-md bg-white">
                 Contact me
               </button>
-              <button className="py-0.5 px-2 ml-3 rounded-md border border-1">
+              <button
+                className="py-1 px-6 ml-3  flex items-center gap-2"
+                onClick={() => {
+                  if (scrollRef.current) {
+                    scrollRef.current.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 See more
+                <FaAnglesDown className="mt-1" />
               </button>
             </div>
           </div>
         </div>
       </Section>
       <Section>
-        <Aboutme />
+        <div ref={scrollRef}>
+          <Aboutme />
+        </div>
       </Section>
 
       <Section>

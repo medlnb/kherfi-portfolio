@@ -33,7 +33,7 @@ function Nav() {
   return (
     <header className="border-b border-gray-700  px-2 fixed w-full bg-black">
       <section className="flex justify-between items-center">
-        <p className="p-3">Mohammed Lamine Kherfi, PhD</p>
+        <p className="p-3">Dr. Mohammed Lamine Kherfi</p>
         <nav className="lg:flex hidden">
           {navs.map((nav) => (
             <p key={nav} className="p-3 hover:bg-gray-800 cursor-pointer">
