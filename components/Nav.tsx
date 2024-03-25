@@ -33,7 +33,7 @@ function Nav() {
   return (
     <header className="border-b border-gray-700  px-2 fixed w-full bg-black">
       <section className="flex justify-between items-center">
-        <p className="p-3">Dr. Mohammed Lamine Kherfi</p>
+        <p className="p-3 text-base">Dr. Mohammed Lamine Kherfi</p>
         <nav className="lg:flex hidden">
           {navs.map((nav) => (
             <p key={nav} className="p-3 hover:bg-gray-800 cursor-pointer">
@@ -42,7 +42,7 @@ function Nav() {
           ))}
         </nav>
         <div ref={menuRef} className="lg:hidden cursor-pointer">
-          <IoMdMenu size={20} onClick={() => setToggleNav(!toggleNav)} />
+          <IoMdMenu size={30} onClick={() => setToggleNav(!toggleNav)} />
         </div>
       </section>
       {toggleNav && (

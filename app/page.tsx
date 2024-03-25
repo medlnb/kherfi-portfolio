@@ -68,20 +68,20 @@ const Home = () => {
   return (
     <div className="h-dvh overflow-y-scroll snap-y snap-mandatory hidescrollbar">
       <Section>
-        <div className="flex lg:flex-row lg:justify-around lg:h-80 flex-col  justify-center gap-20  h-dvh">
-          <div className="flex flex-col justify-around items-center lg:items-start">
+        <div className="flex md:flex-row sm:justify-around sm:h-80 flex-col justify-around gap-20 h-dvh">
+          <div className="flex flex-col justify-around ">
             <img
               src={"/Kherfi.png"}
               className="w-24 h-24 object-cover mb-4 bg-black rounded-full "
               alt="Mohammed Lamine Kherfi picture"
             />
-            <h1 className="lg:text-4xl text-2xl font-medium">
+            <h1 className="sm:text-4xl text-2xl font-medium">
               {"Hello! I'm Dr. Mohammed Lamine Kherfi."}
             </h1>
           </div>
-          <div className="flex flex-col justify-around items-center lg:items-start">
+          <div className="flex flex-col justify-around border">
             <div>
-              <h1 className="lg:text-4xl text-2xl mb-4">
+              <h1 className="sm:text-4xl text-2xl mb-4">
                 Computer Science and Ai phd
               </h1>
               <p>
