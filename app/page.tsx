@@ -68,43 +68,62 @@ const Home = () => {
   return (
     <div className="h-dvh overflow-y-scroll snap-y snap-mandatory hidescrollbar">
       <Section>
-        <div className="flex md:flex-row sm:justify-around sm:h-80 flex-col justify-around gap-20 h-dvh">
-          <div className="flex flex-col justify-around ">
-            <img
-              src={"/Kherfi.png"}
-              className="w-24 h-24 object-cover mb-4 bg-black rounded-full "
-              alt="Mohammed Lamine Kherfi picture"
-            />
-            <h1 className="sm:text-4xl text-2xl font-medium">
-              {"Hello! I'm Dr. Mohammed Lamine Kherfi."}
-            </h1>
-          </div>
-          <div className="flex flex-col justify-around border">
-            <div>
-              <h1 className="sm:text-4xl text-2xl mb-4">
-                Computer Science and Ai phd
+        <div className="h-dvh flex flex-col justify-around ">
+          <div className="h-0 md:h-20"></div>
+          <div className="flex md:flex-row sm:justify-around sm:h-80 flex-col justify-start gap-10">
+            <div className="flex flex-col justify-around ">
+              <img
+                src={"/Kherfi.png"}
+                className="w-24 h-24 object-cover mb-4 bg-black rounded-full "
+                alt="Mohammed Lamine Kherfi picture"
+              />
+              <h1 className="sm:text-4xl text-2xl font-medium">
+                {"Hello! I'm Dr. Mohammed Lamine Kherfi."}
               </h1>
-              <p>
-                Former Director of Digitization, Ministry of higher education
-              </p>
-              <p>Expert in Artificial intelligence</p>
-              <p>Professor : Univ of Québec / Univ Ouargla / ENSIA</p>
             </div>
-            <div className="mt-6 flex ">
-              <button className="text-black py-1 px-6 rounded-md bg-white">
-                Contact me
-              </button>
-              <button
-                className="py-1 px-6 ml-3  flex items-center gap-2"
-                onClick={() => {
-                  if (scrollRef.current) {
-                    scrollRef.current.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                See more
-                <FaAnglesDown className="mt-1" />
-              </button>
+            <div className="flex flex-col justify-around">
+              <div>
+                <h1 className="sm:text-4xl text-2xl mb-4">
+                  Computer Science and Ai phd
+                </h1>
+                <p>
+                  Former Director of Digitization, Ministry of higher education
+                </p>
+                <p>Expert in Artificial intelligence</p>
+                <p>Professor : Univ of Québec / Univ Ouargla / ENSIA</p>
+              </div>
+              <div className="mt-6 flex ">
+                <button className="text-black py-1 px-6 rounded-md bg-white">
+                  Contact me
+                </button>
+                <button
+                  className="py-1 px-6 ml-3  flex items-center gap-2"
+                  onClick={() => {
+                    if (scrollRef.current) {
+                      scrollRef.current.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  See more
+                  <FaAnglesDown className="mt-1" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="bg-black p-6 rounded-xl md:flex md:justify-around grid grid-cols-2 gap-6 items-center">
+            <div className="text-center">
+              <p className="text-xl">+4 Y</p>
+              <p className="text-xs text-gray-400">Work Exprience</p>
+            </div>
+            <div className="text-center">
+              <p className="text-xl">+30</p>
+              <p className="text-xs text-gray-400">
+                Supervisor of master & PhD Students
+              </p>
+            </div>
+            <div className="text-center">
+              <p className="text-xl">+70</p>
+              <p className="text-xs text-gray-400">Scientific publications</p>
             </div>
           </div>
         </div>
