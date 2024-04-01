@@ -116,6 +116,10 @@ const Home = () => {
               <p className="text-xs text-gray-400">Work Exprience</p>
             </div>
             <div className="text-center">
+              <p className="text-xl">+10 Y</p>
+              <p className="text-xs text-gray-400">Teaching</p>
+            </div>
+            <div className="text-center">
               <p className="text-xl">+30</p>
               <p className="text-xs text-gray-400">
                 Supervisor of master & PhD Students
