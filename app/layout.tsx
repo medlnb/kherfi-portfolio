@@ -22,10 +22,10 @@ export default function RootLayout({
         <Nav />
         <main>{children}</main>
         <div className="border-b border-gray-700 px-2 bg-black text-white fixed bottom-0 w-full">
-          <p className="text-base flex items-center justify-center gap-2">
+          {/* <p className="text-base flex items-center justify-center gap-2">
             <MdOutlineEmail className="mt-1" />{" "}
             mohammed.lamine.kherfi.ai@gmail.com
-          </p>
+          </p> */}
         </div>
       </body>
     </html>
