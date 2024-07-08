@@ -7,7 +7,7 @@ function Nav() {
   const pathname = usePathname();
   const pageSelected = pathname.split("/")[1];
 
-  const [toggleNav, setToggleNav] = useState(true);
+  const [toggleNav, setToggleNav] = useState(false);
   const menuRef = useRef(null);
   const navs = [
     "Home",
