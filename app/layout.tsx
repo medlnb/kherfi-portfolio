@@ -18,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black text-white text-xs lg:text-base">
+      <body className="bg-white text-black text-xs lg:text-base hidescrollbar">
         <Nav />
-        <main className="h-svh md:w-[75rem] mx-auto">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

@@ -35,7 +35,7 @@ function Nav() {
   }, []);
 
   return (
-    <header className="border-b border-gray-700 px-2 fixed w-full bg-black">
+    <header className="px-2 sticky top-0 bg-white w-full z-10">
       <section className="flex justify-around items-center">
         <p className="p-3 text-base">Pr. Mohammed Lamine Kherfi</p>
         <nav className="lg:flex hidden">
