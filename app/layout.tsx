@@ -18,15 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black text-white text-xs lg:text-base ">
+      <body className="bg-black text-white text-xs lg:text-base">
         <Nav />
-        <main>{children}</main>
-        <div className="border-b border-gray-700 px-2 bg-black text-white fixed bottom-0 w-full">
-          {/* <p className="text-base flex items-center justify-center gap-2">
-            <MdOutlineEmail className="mt-1" />{" "}
-            mohammed.lamine.kherfi.ai@gmail.com
-          </p> */}
-        </div>
+        <main className="h-svh md:w-[75rem] mx-auto">{children}</main>
       </body>
     </html>
   );

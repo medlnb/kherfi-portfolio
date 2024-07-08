@@ -1,5 +1,5 @@
 "use client";
-import { MutableRefObject, useRef } from "react";
+import { useRef } from "react";
 import Aboutme from "@components/Aboutme";
 import { FaStar } from "react-icons/fa";
 import { FaAnglesDown } from "react-icons/fa6";
@@ -66,7 +66,7 @@ const Home = () => {
   ];
   const scrollRef: React.LegacyRef<HTMLDivElement> | null = useRef(null);
   return (
-    <div className="h-dvh overflow-y-scroll snap-y snap-mandatory hidescrollbar">
+    <div className="h-full overflow-y-scroll snap-y snap-mandatory hidescrollbar">
       <Section>
         <div className="h-dvh flex flex-col justify-around ">
           <div className="h-0 md:h-20"></div>
@@ -78,7 +78,7 @@ const Home = () => {
                 alt="Mohammed Lamine Kherfi picture"
               />
               <h1 className="sm:text-4xl text-2xl font-medium">
-                {"Hello! I'm Dr. Mohammed Lamine Kherfi."}
+                {"Hello! I'm Pr. Mohammed Lamine Kherfi."}
               </h1>
             </div>
             <div className="flex flex-col justify-around">
@@ -112,11 +112,11 @@ const Home = () => {
           </div>
           <div className="bg-black p-6 rounded-xl md:flex md:justify-around grid grid-cols-2 gap-6 items-center">
             <div className="text-center">
-              <p className="text-xl">+4 Y</p>
+              <p className="text-xl">+7 Y</p>
               <p className="text-xs text-gray-400">Work Exprience</p>
             </div>
             <div className="text-center">
-              <p className="text-xl">+10 Y</p>
+              <p className="text-xl">+18 Y</p>
               <p className="text-xs text-gray-400">Teaching</p>
             </div>
             <div className="text-center">
@@ -140,7 +140,7 @@ const Home = () => {
 
       <Section>
         <h1 className="text-4xl pb-4 text-center">Education</h1>
-        <div className="grid lg:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-1 gap-4">
           {educations.map((education, index) => (
             <Card key={index} {...education} />
           ))}
@@ -148,7 +148,7 @@ const Home = () => {
       </Section>
       <Section>
         <h1 className="text-4xl pb-4 text-center">Work experience</h1>
-        <div className="grid lg:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-1 gap-4">
           {experiences.map((experience, index) => (
             <Card key={index} {...experience} />
           ))}
@@ -156,15 +156,13 @@ const Home = () => {
       </Section>
       <Section>
         <h1 className="text-4xl pb-4  text-center">Awards and honors</h1>
-        <div className="border p-2 rounded-md">
-          <div className="px-3 text-gray-300 text-">
-            {rewards.map((reward, index) => (
-              <p key={index} className="my-2">
-                <FaStar className="inline mb-1.5 mr-2" />
-                {reward}
-              </p>
-            ))}
-          </div>
+        <div className="px-3 text-gray-300 text-">
+          {rewards.map((reward, index) => (
+            <p key={index} className="my-2">
+              <FaStar className="inline mb-1.5 mr-2" />
+              {reward}
+            </p>
+          ))}
         </div>
       </Section>
     </div>

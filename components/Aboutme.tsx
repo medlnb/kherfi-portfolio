@@ -2,7 +2,7 @@ function Aboutme() {
   return (
     <div className="text-center">
       <h1 className="text-4xl pb-4">About me</h1>
-      <div className="grid lg:grid-cols-2 gap-4">
+      <div className="grid lg:grid-cols-1 gap-4">
         <article className="border border-gray-500  p-2 rounded-lg">
           <h2 className="text-2xl">As a Director</h2>
           <p className="p-4 text-gray-400">
