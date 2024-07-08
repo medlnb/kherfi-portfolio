@@ -6,10 +6,12 @@ const GoLeft = ({
   children,
   init,
   end,
+  delay,
 }: {
   children: React.ReactNode;
   init: any;
   end: any;
+  delay?: any;
 }) => {
   const Eduref = useRef(null);
   const isInView = useInView(Eduref, { once: true });
@@ -21,6 +23,7 @@ const GoLeft = ({
   }, [isInView]);
   return (
     <motion.div
+      className="h-full w-full"
       ref={Eduref}
       variants={{
         start: init,
@@ -28,7 +31,7 @@ const GoLeft = ({
       }}
       initial="start"
       animate={maincontrols}
-      transition={{ duration: 0.7, delay: 0.4 }}
+      transition={{ duration: 0.7, delay: delay ?? 0.2 }}
     >
       {children}
     </motion.div>

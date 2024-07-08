@@ -1,4 +1,5 @@
 import React from "react";
+import GoLeft from "./GoLeft";
 
 function AboutHim() {
   return (
@@ -13,6 +14,7 @@ function AboutHim() {
         </div>
         <div className="w-full md:w-1/2 p-4 md:p-8">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">About Me</h2>
+
           <p className="text-sm md:text-base text-gray-800 mb-3">
             <b>Dr Mohammed Lamine Kherfi</b> holds a PhD from the university of
             Sherbrooke, Canada.
@@ -23,6 +25,7 @@ function AboutHim() {
               "He worked as a Professor of Computer science and Artificial intelligence at the University of Quebec, Canada and Ouargla University, Algeria. He also served as a national director for digitization at the Ministry of Higher Education and Scientific Research. "
             }
           </p>
+
           <p className="text-sm md:text-base text-gray-800 mb-3">
             {
               "He is a founding member of the National Higher School of Artificial Intelligence, LAMIA Lab at UQTR and LINATI Lab at UKMO."
@@ -39,6 +42,7 @@ function AboutHim() {
               "He has supervised 13 PhD and dozens of master’s students, organized and chaired two editions of the International Conference on Artificial Intelligence and Information Technology. He has published some 80 research papers in renowned scientific journals and conferences."
             }
           </p>
+
           <p className="text-sm md:text-base text-gray-800 mb-3">
             <b>As National Director</b> of Digitization at the Ministry of
             Higher Education and Scientific Research, he contributed to drawing
@@ -61,10 +65,17 @@ function AboutHim() {
           "/mesrs.png",
           "/qasdi.png",
           "/Sherbrooke.png",
-        ].map((logo) => (
-          <div key={logo} className="flex-1">
-            <img src={logo} className="flex-1 hover:shadow-lg rounded-md" />
-          </div>
+        ].map((logo, index) => (
+          <GoLeft
+            key={logo}
+            init={{ opacity: 0, y: 50 }}
+            end={{ opacity: 1, y: 0 }}
+            delay={index * 0.1}
+          >
+            <div className="flex-1">
+              <img src={logo} className="flex-1 hover:shadow-lg rounded-md" />
+            </div>
+          </GoLeft>
         ))}
       </div>
     </main>
