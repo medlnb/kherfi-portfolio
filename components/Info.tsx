@@ -47,7 +47,7 @@ function Info() {
   };
 
   return (
-    <main className="flex gap-20 mt-20 md:mt-44 md:w-[50rem] mx-auto p-2 w-full">
+    <main className="flex gap-20 mt-20 md:mt-44 md:w-[50rem] mx-auto p-2 w-full overflow-x-hidden">
       <div className="hidden md:block">
         <nav className="sticky top-36">
           {["Education", "Work Experience", "Awards and Honors"].map((nav) => (

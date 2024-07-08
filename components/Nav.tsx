@@ -53,11 +53,11 @@ function Nav() {
         </div>
         {toggleNav && (
           <nav
-            className="fixed right-2 rounded-md top-[3.2rem] grid bg-black px-6 text-center"
+            className="fixed right-2 rounded-md top-[3.2rem] grid bg-white text-black px-6 text-center"
             style={{ boxShadow: "0px 0px 3px gray" }}
           >
             {navs.map((nav) => (
-              <p key={nav} className="p-3 hover:bg-gray-800 cursor-pointer">
+              <p key={nav} className="p-3 cursor-pointer">
                 {nav}
               </p>
             ))}

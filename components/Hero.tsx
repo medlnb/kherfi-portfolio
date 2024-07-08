@@ -3,7 +3,7 @@ import GoLeft from "./GoLeft";
 function Hero() {
   return (
     <div
-      className="text-black relative flex"
+      className="text-black relative flex overflow-hidden"
       style={{ height: "calc(100svh - 3rem)" }}
     >
       <div className="bg-[#ebefff] flex-1 -z-10"></div>

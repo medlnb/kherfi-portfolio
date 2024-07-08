@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white text-black text-xs lg:text-base hidescrollbar">
         <Nav />
-        <main className="overflow-x-hidden">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
