@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.triangle {
+  position: absolute;
+  bottom: 6rem;
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 70px solid #ebefff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hidescrollbar::-webkit-scrollbar {
   display: none;
 }

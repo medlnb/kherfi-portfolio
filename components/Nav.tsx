@@ -35,9 +35,9 @@ function Nav() {
   }, []);
 
   return (
-    <header className="px-2 sticky top-0 bg-white w-full z-10">
+    <header className="p-1  sticky top-0 bg-white w-full z-10 text-lg">
       <section className="flex justify-around items-center">
-        <p className="p-3 text-base">Pr. Mohammed Lamine Kherfi</p>
+        <p className="p-3">Pr. Mohammed Lamine Kherfi</p>
         <nav className="lg:flex hidden">
           {navs.map((nav) => (
             <p
@@ -53,7 +53,7 @@ function Nav() {
         </div>
         {toggleNav && (
           <nav
-            className="fixed right-2 rounded-md top-[3.2rem] grid bg-white text-black px-6 text-center"
+            className="fixed right-2 rounded-md top-[4rem] grid bg-white text-black px-6 text-center"
             style={{ boxShadow: "0px 0px 3px gray" }}
           >
             {navs.map((nav) => (

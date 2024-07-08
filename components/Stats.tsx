@@ -11,8 +11,9 @@ function Stats() {
       ].map((stat, index) => (
         <GoLeft
           key={stat.years}
-          init={{ opacity: 0, ...(index % 2 === 1 ? { y: -50 } : { y: 50 }) }}
+          init={{ opacity: 0, y: -50 }}
           end={{ opacity: 1, y: 0 }}
+          delay={index * 0.1}
         >
           <div
             className="h-full py-4 rounded-md hover:border cursor-pointer"
